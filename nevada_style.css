@@ -1,0 +1,249 @@
+
+html, body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+/* navbar and dropdown syling */
+.navbar {
+  overflow: auto;
+  background-color: #021629;
+  ;
+}
+
+.navbar a {
+  float: left;
+  border-radius: 50%;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.navbar a.active{
+    background-color:rgb(245, 12, 12);
+    color:rgb(241, 234, 234);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f10c0c;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nevada_seal {
+    height: 120px;
+    width: 120px;
+    margin-left: 200px;
+}
+#nevadaname {
+    height: 120px;
+    width: 120px;
+}
+
+/* header syling */
+.column {
+    float: left;
+    width: 30%;
+  }
+    header {
+      position: fixed;
+      top: 0;
+      display: inline-block;
+      width: 100%;
+      background-color: rgb(176, 186, 195);
+    }
+
+.carsonheader {
+  background-color: rgb(25, 22, 221);
+}
+
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  /* header text alignment */
+  .textalignment 
+  { text-align: left;
+    margin-left: 0px;
+    color: rgba(20, 20, 44, 0.869);
+  }
+/* main content syling */
+main{
+padding-top: 13%;
+margin-left: 30px;
+margin-right: 30px;
+
+}
+  #homepage {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .h3margin {
+    margin-bottom: 0;
+    margin-left: 7px;
+    margin-top: 5%;
+  }
+  .headingmargin {
+    margin-top: 0;
+    margin-bottom: 0;
+    display:block
+  }
+
+    aside {
+      width: 30%;
+      padding-left: 15px;
+      margin-left: 15px;
+      float: right;
+      padding-bottom: 5%;
+      font-style: italic;
+      background-color: lightgray;
+      position: relative;
+    }
+    
+    strong {
+      color: red;
+    }
+
+    footer {
+      font-size: x-small;
+     text-align: center;
+      display: block;
+      position: fixed;
+      background-color: #021629;
+      color: white;
+      width: 100%;
+      bottom: 0;
+      height: 60px;
+     }
+     
+/* Las vegas only styling begin here */
+        /* header text alignment */
+        .las_vegastextalignment {
+          text-align: left;
+          margin-left: 40px;
+          color: rgba(20, 20, 44, 0.869);
+        }
+
+        .maincolor {
+          background-color: rgb(202, 218, 218);
+        }
+        /*form styling */
+        * {
+          box-sizing: border-box;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          resize: vertical;
+        }
+
+        label {
+          padding: 12px 12px 12px 0;
+          display: inline-block;
+        }
+
+        button[type=button] {
+          background-color: #04AA6D;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          float: right;
+        }
+
+        button [type=button]:hover {
+          background-color: #45a049;
+        }
+
+        .container {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+          width: 67%;
+        }
+
+        .col-25 {
+          float: left;
+          
+          width: 25%;
+          margin-top: 6px;
+        }
+
+        .col-75 {
+          float: left;
+          width: 75%;
+          margin-top: 6px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+
+          .col-25,
+          .col-75,
+          input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+          }
+        }
