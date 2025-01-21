@@ -120,6 +120,10 @@ html, body {
       text-shadow: 0 3px 3px black;
       background-attachment: fixed;
     }
+    header p {
+      color: white;
+        text-align: center;
+    }
 
 .carsonheader {
   background-color: rgb(25, 22, 221);
