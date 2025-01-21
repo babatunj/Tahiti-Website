@@ -1,12 +1,17 @@
 
 html, body {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/header.webp") no-repeat center fixed;
+  background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
+  text-shadow: 2px 2px 5px rgb(3, 2, 2);
+  color: white;
 }
+
 /* navbar and dropdown syling */
 .navbar {
   overflow: auto;
@@ -16,12 +21,17 @@ html, body {
 
 .navbar a {
   float: left;
-  border-radius: 50%;
+  border-radius: 15%;
   font-size: 16px;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 50px;
   text-decoration: none;
+  margin-left: 10px;
+}
+.navbar .dropdown-content a {
+  margin-left: auto;
+  border-radius: 10px;
 }
 
 .dropdown {
@@ -31,7 +41,7 @@ html, body {
 
 .dropdown .dropbtn {
   font-size: 16px; 
-  border-radius: 50%;
+  border-radius: 10%;
   border: none;
   outline: none;
   color: white;
@@ -98,6 +108,18 @@ html, body {
       width: 100%;
       background-color: rgb(176, 186, 195);
     }
+    header h1 {
+      font-size: 2.5em;
+      color: white;
+      padding: 12px;
+      text-align: center;
+      margin: 0;
+      color: white;
+      background-size: cover;
+      box-shadow: 0 0 10px black;
+      text-shadow: 0 3px 3px black;
+      background-attachment: fixed;
+    }
 
 .carsonheader {
   background-color: rgb(25, 22, 221);
@@ -153,17 +175,25 @@ margin-right: 30px;
       color: red;
     }
 
-    footer {
-      font-size: x-small;
-     text-align: center;
-      display: block;
-      position: fixed;
-      background-color: #021629;
-      color: white;
-      width: 100%;
-      bottom: 0;
-      height: 60px;
-     }
+  footer {
+    font-size: medium;
+    text-align: center;
+    display: flex;
+    /* Use flexbox for layout */
+    justify-content: space-between;
+    /* Space between columns */
+    align-items: center;
+    /* Align items vertically */
+    background-color: #021629;
+    color: white;
+    width: 100%;
+    bottom: 0;
+    height: 40px;
+    padding: 0 20px;
+    /* Add some padding */
+    position: fixed;
+    left: 0;
+  }
      
 /* Las vegas only styling begin here */
         /* header text alignment */
@@ -247,3 +277,64 @@ margin-right: 30px;
             margin-top: 0;
           }
         }
+
+        footer .col {
+          flex: 1;
+          /* Each column takes equal space */
+          text-align: center;
+          /* Center align text */
+        }
+
+        footer .col a {
+          color: white;
+          /* Footer link color */
+          margin: 2px;
+          /* Add spacing between links */
+          text-decoration: none;
+          /* Remove underline from links */
+        }
+
+        footer .col a:hover {
+          text-decoration: underline;
+          /* Underline on hover */
+        }
+
+.navbar .search-container {
+  float: right;
+  margin-right: 50px;
+}
+
+.navbar input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  width: auto;
+}
+
+.navbar .search-container button:hover {
+  background: #ddd;
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .navbar .search-container {
+    float: none;
+  }
+
+  .navbar a,
+  .navbar input[type="text"],
+  .navbar .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: auto;
+    margin: 0;
+    padding: 14px;
+  }
+
+  .navbar input[type="text"] {
+    border: 1px solid #ccc;
+  }
+}
