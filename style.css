@@ -1,6 +1,6 @@
 
 html, body {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/header.webp") no-repeat center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("images/header.jpg") no-repeat center fixed;
   background-size: cover;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
@@ -171,7 +171,7 @@ margin-right: 30px;
       float: right;
       padding-bottom: 5%;
       font-style: italic;
-      background-color: lightgray;
+      background-color: transparent;
       position: relative;
     }
     
@@ -341,4 +341,24 @@ margin-right: 30px;
   .navbar input[type="text"] {
     border: 1px solid #ccc;
   }
+}
+/*CSS for FAQ Section*/
+.faq-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.faq-section h3 {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 5px;
+  text-shadow: 2px 2px 5px rgba(3, 2, 2, 0.431);
+}
+.faq-section p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 5px rgba(22, 25, 227, 0.448);
 }
