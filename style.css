@@ -362,3 +362,10 @@ margin-right: 30px;
   margin-bottom: 15px;
   text-shadow: 2px 2px 5px rgba(22, 25, 227, 0.448);
 }
+.image-right {
+  float: right;
+  width: 20%;
+  margin-left: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
